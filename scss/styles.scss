@@ -1,93 +1,89 @@
-//imports,
+//import
 @import "utilities/variables";
 @import "utilities/medias";
 
 //nesting
-html{
+html {
     font-size: 18px;
-}
 
-body{
-    background-color: #F9D923;
-    height: 100vh;
-}
+    body {
+        background-color: #F9D923;
+        height: 100vh;
 
-header {
-        margin-bottom: 1rem;
-        background-color: $color-principal;
-        grid-area: header;
-        
 
-        h1 {
-            text-align: center;
-            font-size: 2rem;
-            color: #ecce1f;
-            padding: 1rem;
-        }
+        header {
+            margin-bottom: 1rem;
+            background-color: $color-principal;
+            grid-area: header;
 
-        nav {
-            ul {
-                display: flex;
-                justify-content: space-evenly;
-                list-style-type: none;
 
-                li {
-                    text-decoration: none;
-                    font-size: 1rem;
-                    color: black;
-                    background-color: rgba(238, 235, 53, 0.507);
-                    margin: 0.2rem;
-                    font-family: 'Roboto Condensed', sans-serif;
-                    border-radius: 1rem;
-                    font-weight: bold;
+            h1 {
+                text-align: center;
+                font-size: 2rem;
+                color: #ecce1f;
+                padding: 1rem;
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style-type: none;
+
+                    li {
+                        text-decoration: none;
+                        font-size: 1rem;
+                        color: black;
+                        background-color: rgba(238, 235, 53, 0.507);
+                        margin: 0.2rem;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        border-radius: 1rem;
+                        font-weight: bold;
+                    }
                 }
             }
         }
-}
 
-.mainNosotros {
-        padding: 1.5rem;
-        display: grid;
-        grid-template-areas: "mainP mainP"
-                             "divImagen divImagen"
-                             "piepagina piepagina";
-        justify-items: center;
-        background-color: #F9D923;
-        grid-area: main;
-        
+        .mainNosotros {
+            padding: 1.5rem;
+            display: grid;
+            grid-template-areas: "mainP mainP"
+                "divImagen divImagen"
+                "piepagina piepagina";
+            justify-items: center;
+            background-color: #F9D923;
+            grid-area: main;
 
-        .mainP {
-            grid-area: mainP;
-            text-align: center;
-            font-size: 1rem;
+
+            .mainP {
+                grid-area: mainP;
+                text-align: center;
+                font-size: 1rem;
+            }
         }
-}
 
-section{
-        .divImagen 
+        section
+            .divImagen{
             grid-area: divImagen;
-        
 
-        .sectionImagen {
-            display: none;
-            display: block;
-            grid-area: sectionImagen;
+
+            .sectionImagen {
+                display: none;
+                display: block;
+                grid-area: sectionImagen;
+            }
+
+            .sectionCorriendo {
+                display: none;
+                display: block;
+                grid-area: sectionCorriendo;
+            }
         }
 
-        .sectionCorriendo {
-            display: none;
-            display: block;
-            grid-area: sectionCorriendo;
+        footer {
+            grid-area: piepagina;
+            text-align: center;
+            background-color: #187498;
         }
+    }
 }
-
-footer {
-        grid-area: piepagina;
-        text-align: center;
-        background-color: #187498;
-}
-
-
-
-
-    

@@ -5,45 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de css bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--link de mi css-->
     <link rel="stylesheet" href="../css/style.css">
+
     <title>Nosotros</title>
 </head>
 
 <body>
-    <header>
-
-        <nav>
-            <div>
-                <h1 class="tituloPrincipal">Conocemos</h1>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-sm-3 col-md-12 col-lg-12">
+                <h1>Nosotros</h1>
             </div>
-            <ul class="justify">
-                <li><a href="../index.html"> Inicio </a></li>
-                <li><a href="centrodeactividadesfisicas.html"> Centro de Actividades Físicas</a></li>
-                <li><a href="esteticaybelleza.html"> Estética y Belleza</a></li>
-                <li><a href="nosotros.html"> Nosotros </a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+            <div class="col-sm-9 col-md-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg col-sm-6 col-md-12">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html"> Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="centrodeactividadesfisicas.html" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false"> Centro de
+                                        Actividades Fisicas
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="esteticaybelleza.html"> Estética y Belleza </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nosotros.html"> Nosotros </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html"> Contacto </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-    </header>
-    <main class="gridNosotros">
-        <div  class="fisicaImagen">
-            <img src="../img/grupo de profe.jpg" alt="">
-            <p>Todos los días trabajamos para vos </p>
-        </div>
-        <div  class="fisicaImagen">
-            <img src="../img/grupo.jpg" alt="">
-            <p>Se parte de Nosotros</p>
-        </div  class="fisicaImagen">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOP3zuAjCFw" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </main>
 
-    <footer class="piePagina">
-        <p>&copy; Lucas Durand 2022</p>
-    </footer>
+        <main class="gridNosotros">
+            <div class="fisicaImagen">
+                <img src="../img/grupo de profe.jpg" alt="">
+                <p>Todos los días trabajamos para vos </p>
+            </div>
+            <div class="fisicaImagen">
+                <img src="../img/grupo.jpg" alt="">
+                <p>Se parte de Nosotros</p>
+            </div class="fisicaImagen">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BOP3zuAjCFw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </main>
+
+        <footer class="piePagina">
+            <p>&copy; Lucas Durand 2022</p>
+        </footer>
+    </div>
+    <!--link de js de bt-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
