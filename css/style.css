@@ -5,7 +5,9 @@
   .mainNosotros {
     display: grid;
     height: 100vh;
-    grid-template-areas: "mainP mainP" "divImagen sectionImagen" "piepagina piepagina";
+    grid-template-areas: "mainP mainP"
+ "divImagen sectionImagen"
+ "piepagina piepagina";
     justify-items: center;
     column-gap: 0.5rem; } }
 
@@ -14,9 +16,21 @@
     display: grid;
     height: 100vh;
     grid-template-rows: 4.5fr 20fr 2fr 0.5fr;
-    grid-template-areas: "header header header header" "mainP mainP mainP mainP" "divImagen divImagen sectionImagen sectionCorriendo" "footer footer footer footer";
+    grid-template-areas: "header header header header"
+ "mainP mainP mainP mainP"
+ "divImagen divImagen sectionImagen sectionCorriendo"
+ "footer footer footer footer";
     gap: 0.5rem; } }
 
+
+/*reset*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+   
 html {
   font-size: 18px; }
   html body {
@@ -25,7 +39,8 @@ html {
     html body header {
       margin-bottom: 1rem;
       background-color: #EB5353;
-      grid-area: header; }
+      
+    }
       html body header h1 {
         text-align: center;
         font-size: 2rem;
@@ -46,13 +61,10 @@ html {
           font-weight: bold; }
     html body .mainNosotros {
       padding: 1.5rem;
-      display: grid;
-      grid-template-areas: "mainP mainP" "divImagen divImagen" "piepagina piepagina";
       justify-items: center;
       background-color: #F9D923;
-      grid-area: main; }
-      html body .mainNosotros .mainP {
-        grid-area: mainP;
+    }
+      html body .mainNosotros{
         text-align: center;
         font-size: 1rem; }
     html body section
@@ -69,6 +81,65 @@ html {
         display: block;
         grid-area: sectionCorriendo; }
     html body footer {
-      grid-area: piepagina;
+      
       text-align: center;
-      background-color: #187498; }
+      background-color: #EB5353;
+      }
+
+
+.cabeza {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+  grid-area: cabeza;
+}
+
+main{
+  display: grid;
+  gap: 10px;
+  grid-area: main;
+
+}
+
+section{
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  column-gap: 10px;
+  gap: 10px;
+  justify-content: center;
+  height: 400px;
+  grid-area: section;
+}
+
+
+footer{
+  display: grid;
+  gap: 10px;
+  grid-area: footer;
+}
+
+
+.imagenContacto{
+  justify-self:right;
+}
+
+.contenedor{
+  display: grid;
+  grid-template-areas: "cabeza cabeza cabeza"
+                       "main main main"
+                       "section section section"
+                       "footer footer footer";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

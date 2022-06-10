@@ -7,14 +7,14 @@ html {
     font-size: 18px;
 
     body {
-        background-color: #F9D923;
+        background-color: ;
         height: 100vh;
 
 
         header {
             margin-bottom: 1rem;
             background-color: $color-principal;
-            grid-area: header;
+            
 
 
             h1 {
@@ -47,9 +47,7 @@ html {
         .mainNosotros {
             padding: 1.5rem;
             display: grid;
-            grid-template-areas: "mainP mainP"
-                "divImagen divImagen"
-                "piepagina piepagina";
+            
             justify-items: center;
             background-color: #F9D923;
             grid-area: main;
