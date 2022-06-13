@@ -47,9 +47,11 @@ footer {
   background-color: #EB5353;
 }
 
-/*para grid*/
+/*home*/
 
-.mainP{
+/*grid de home*/
+
+.mainP {
   grid-area: mainP;
   text-align: center;
   font-size: 0.7rem;
@@ -59,45 +61,220 @@ footer {
   grid-area: carousel;
 }
 
-.imagenMaquina {
-  grid-area: imagenMaquina;
+.corriendo {
+  grid-area: corriendo;
+  display: none;
+
 }
 
-.mainMain{
+.estetica {
+  grid-area: estetica;
+  display: none;
+}
+
+.mainMain {
   height: 80vh;
   display: grid;
   grid-template-areas: "mainP"
                        "carousel";
-  padding: 1rem; 
-  justify-items:center
-       
+  padding: 1rem;
+  justify-items: center
 }
 
-.corriendo{
-  display: none;
-}
-
-.imagenMaquina{
-  display: none;
-}
-
-
-.gimnasio{
-  display: none;
-}
-
-/*mq*/
+/*mq home*/
 
 @media screen and (min-width:600px) {
-  .gimnasio{
+  .mainP{
+    font-size: 0.9rem;
+  }
+
+  .corriendo {
+    display: none;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .estetica {
     display: block;
-    grid-area: gimnasio;
   }
-  
-  .mainMain{
+
+  .mainMain {
+    height: 100vh;
     display: grid;
-    grid-template-areas: "mainP mainP"
-                         "carousel carousel"
-                         "gimnasio gimnasio";
+    grid-template-areas: "mainP"
+                         "estetica";
   }
+}
+
+@media screen and (min-width:1024px) {
+  .carousel {
+    display: block;
+    grid-area: carousel;
+  }
+
+  .corriendo {
+    grid-area: corriendo;
+    display: block;
+  }
+
+  .estetica {
+    display: block;
+    grid-area: estetica;
+  }
+
+  .mainMain {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "mainP carousel"
+                         "corriendo estetica";
+  }
+}
+
+/*Centro de actividades*/
+
+/*grid de Centro de actividades*/
+
+.fisicaImagen1 {
+  grid-area: fisicaImagen1;
+}
+
+.fisicaImagen2 {
+  grid-area: fisicaImagen2;
+}
+
+.fisicaImagen3 {
+  grid-area: fisicaImagen3;
+}
+
+.mainCentro {
+  display: grid;
+  grid-template-areas: "mainP"
+                       "fisicaImagen1"
+                       "fisicaImagen2"
+                       "fisicaImagen3";
+  justify-items: center;
+}
+
+/*mq Centro*/
+
+@media screen and (min-width:600px) {
+  .mainP{
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .mainCentro {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "mainP mainP mainP"
+                         "fisicaImagen1 fisicaImagen2 fisicaImagen3";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem;
+  }
+}
+
+/*Estetica*/
+
+/*grid de estetica*/
+
+.mainEstetica {
+  display: grid;
+  grid-template-areas: "mainP"
+                       "fisicaImagen1"
+                       "fisicaImagen2"
+                       "fisicaImagen3";
+  justify-items: center;
+}
+
+/*mq Estetica*/
+
+@media screen and (min-width:600px) {
+  .mainP{
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .mainEstetica {
+
+    display: grid;
+    grid-template-areas: "mainP mainP mainP"
+                         "fisicaImagen1 fisicaImagen2 fisicaImagen3";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem;
+  }
+
+}
+
+/*Nosotros*/
+
+/*grid de nosotros*/
+
+.mainNosotros{
+  display: grid;
+  grid-template-areas: "mainP"
+                       "fisicaImagen1"
+                       "fisicaImagen2"
+                       "fisicaImagen3";
+  justify-items: center;
+}
+
+/*mq Nosotros*/
+
+@media screen and (min-width:600px) {
+  .mainP{
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .mainNosotros {
+
+    display: grid;
+    grid-template-areas: "mainP mainP mainP"
+                         "fisicaImagen1 fisicaImagen2 fisicaImagen3";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem;
+  }
+
+}
+
+.imagenContacto{
+  padding: 2rem;
+  justify-items: center;
+}
+
+/*Contacto*/
+
+/*grid de contacto*/
+
+.imagenContacto{
+  grid-area: imagenContacto;
+  display: none;
+}
+
+.mainContacto{
+  margin: 2rem;
+  height: 70vh;
+  display: grid;
+   
+}
+
+/*mq Contacto*/
+
+@media screen and (min-width:600px) {
+  
+  .imagenContacto{
+    display: block;
+  }
+
+  .mainContacto {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "imagenContacto";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem;
+  }
+
 }
