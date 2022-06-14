@@ -1,86 +1,164 @@
-//import
+//imports
 @import "utilities/variables";
 @import "utilities/medias";
 
 //nesting
-html {
-    font-size: 18px;
+/*reset*/
 
-    body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html {
+        font-size: 18px;
         height: 100vh;
+        }
+        
 
-
-        header {
-            margin-bottom: 1rem;
+        body {
             background-color: $color-principal;
+            height: 100vh;
+            }
             
 
+            header {
+                margin-bottom: 1rem;
+                background-color: #EB5353;
+                
 
-            h1 {
-                text-align: center;
-                font-size: 2rem;
-                color: #ecce1f;
-                padding: 1rem;
-            }
-
-            nav {
-                ul {
-                    
-                    justify-content: space-evenly;
-                    list-style-type: none;
-
-                    li {
-                        text-decoration: none;
-                        font-size: 1rem;
-                        color: black;
-                        background-color: rgba(238, 235, 53, 0.507);
-                        margin: 0.2rem;
-                        font-family: 'Roboto Condensed', sans-serif;
-                        border-radius: 1rem;
-                        font-weight: bold;
+                h1 {
+                    text-align: center;
+                    font-size: 2rem;
+                    color: #ecce1f;
+                    padding: 1rem;
                     }
+
+                nav {
+                        ul {
+                            display: flex;
+                            list-style-type: none;
+                            }
+                            li {
+                                background-color: rgba(238, 235, 53, 0.507);
+                                margin: 0.2rem;
+                                font-family: 'Roboto Condensed', sans-serif;
+                                border-radius: 1rem;
+                                font-weight: bold;
+                            }
                 }
             }
-        }
+        
+            .mainMain {
+                height: 80vh;
+                display: grid;
+                grid-template-areas: "mainP"
+                                     "carousel";
+                padding: 1rem;
+                justify-items: center;
+                .mainP {
+                    grid-area: mainP;
+                    text-align: center;
+                    font-size: 0.7rem; }
+                .carousel {
+                    grid-area: carousel; }
+                .estetica {
+                    grid-area: estetica;
+                    display: none; }
+                .corriendo {
+                    grid-area: corriendo;
+                    display: none; }
+            }
 
-        .mainNosotros {
-            padding: 1.5rem;
-            display: grid;
             
-            justify-items: center;
-            background-color: #F9D923;
-            grid-area: main;
-
-
-            .mainP {
-                grid-area: mainP;
-                text-align: center;
-                font-size: 1rem;
+            footer {
+                    grid-area: footer;
+                    text-align: center;
+                    background-color: #EB5353;
             }
-        }
-
-        section
-            .divImagen{
-            grid-area: divImagen;
+                  
+            
+            
 
 
-            .sectionImagen {
-                display: none;
-                display: block;
-                grid-area: sectionImagen;
-            }
 
-            .sectionCorriendo {
-                display: none;
-                display: block;
-                grid-area: sectionCorriendo;
-            }
-        }
+  
+  
+  
+  .fisicaImagen1 {
+    grid-area: fisicaImagen1;
+  }
+  
+  .fisicaImagen2 {
+    grid-area: fisicaImagen2;
+  }
+  
+  .fisicaImagen3 {
+    grid-area: fisicaImagen3;
+  }
+  
+  .mainCentro {
+    display: grid;
+    grid-template-areas: "mainP"
+                         "fisicaImagen1"
+                         "fisicaImagen2"
+                         "fisicaImagen3";
+    justify-items: center;
+  }
+  
+ 
+  
+  /*Estetica*/
+  
+  /*grid de estetica*/
+  
+  .mainEstetica {
+    display: grid;
+    grid-template-areas: "mainP"
+                         "fisicaImagen1"
+                         "fisicaImagen2"
+                         "fisicaImagen3";
+    justify-items: center;
+  }
+  
+ 
+  
+  
+  
+  /*Nosotros*/
+  
+  /*grid de nosotros*/
+  
+  .mainNosotros{
+    display: grid;
+    grid-template-areas: "mainP"
+                         "fisicaImagen1"
+                         "fisicaImagen2"
+                         "fisicaImagen3";
+    justify-items: center;
+  }
+  
 
-        footer {
-            grid-area: piepagina;
-            text-align: center;
-            background-color: #187498;
-        }
-    }
-}
+  
+  .imagenContacto{
+    padding: 2rem;
+    justify-items: center;
+    grid-area: imagenContacto;
+    display: none;
+  }
+  
+  
+  /*Contacto*/
+  
+  /*grid de contacto*/
+   
+  .mainContacto{
+    margin: 2rem;
+    height: 70vh;
+    display: grid;
+     
+  }
+  
+
+  
