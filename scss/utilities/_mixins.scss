@@ -1,0 +1,78 @@
+@mixin header {
+    margin-bottom: 1rem;
+                background-color: #EB5353;
+                
+
+                h1 {
+                    text-align: center;
+                    font-size: 2rem;
+                    color: #ecce1f;
+                    padding: 1rem;
+                    }
+
+                nav {
+                        ul {
+                            display: flex;
+                            list-style-type: none;
+                            }
+                            li {
+                                background-color: rgba(238, 235, 53, 0.507);
+                                margin: 0.2rem;
+                                font-family: 'Roboto Condensed', sans-serif;
+                                border-radius: 1rem;
+                                font-weight: bold;
+                            }
+                }
+    
+}
+
+@mixin mainMain {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainP"
+                         "carousel";
+    padding: 1rem;
+    justify-items: center;
+}
+
+@mixin mainCentro {
+    display: grid;
+  grid-template-areas: "mainP"
+ "fisicaImagen1"
+ "fisicaImagen2"
+ "fisicaImagen3";
+  justify-items: center; 
+    
+}
+
+@mixin mainEstetica {
+    display: grid;
+  grid-template-areas: "mainP"
+ "fisicaImagen1"
+ "fisicaImagen2"
+ "fisicaImagen3";
+  justify-items: center; 
+}
+
+@mixin mainNosotros {
+    display: grid;
+  grid-template-areas: "mainP"
+ "fisicaImagen1"
+ "fisicaImagen2"
+ "fisicaImagen3";
+  justify-items: center;
+}
+
+@mixin mainContacto{
+    margin: 2rem;
+  height: 70vh;
+  display: grid;
+}
+
+@mixin imagenContacto{
+    padding: 2rem;
+    justify-items: center;
+    grid-area: imagenContacto;
+    display: none;
+}
+

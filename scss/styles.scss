@@ -1,6 +1,9 @@
 //imports
 @import "utilities/variables";
 @import "utilities/medias";
+@import "utilities/mixins";
+@import "utilities/extend";
+
 
 //nesting
 /*reset*/
@@ -24,39 +27,14 @@
             
 
             header {
-                margin-bottom: 1rem;
-                background-color: #EB5353;
-                
-
-                h1 {
-                    text-align: center;
-                    font-size: 2rem;
-                    color: #ecce1f;
-                    padding: 1rem;
-                    }
-
-                nav {
-                        ul {
-                            display: flex;
-                            list-style-type: none;
-                            }
-                            li {
-                                background-color: rgba(238, 235, 53, 0.507);
-                                margin: 0.2rem;
-                                font-family: 'Roboto Condensed', sans-serif;
-                                border-radius: 1rem;
-                                font-weight: bold;
-                            }
-                }
+                @include header;
             }
+            
         
             .mainMain {
-                height: 80vh;
-                display: grid;
-                grid-template-areas: "mainP"
-                                     "carousel";
-                padding: 1rem;
-                justify-items: center;
+                @include mainMain;
+
+                
                 .mainP {
                     grid-area: mainP;
                     text-align: center;
@@ -77,15 +55,8 @@
                     text-align: center;
                     background-color: #EB5353;
             }
-                  
-            
-            
-
-
-
-  
-  
-  
+                     
+           
   .fisicaImagen1 {
     grid-area: fisicaImagen1;
   }
@@ -99,66 +70,37 @@
   }
   
   .mainCentro {
-    display: grid;
-    grid-template-areas: "mainP"
-                         "fisicaImagen1"
-                         "fisicaImagen2"
-                         "fisicaImagen3";
-    justify-items: center;
+    @include mainCentro;
   }
-  
- 
-  
+    
   /*Estetica*/
-  
-  /*grid de estetica*/
+    /*grid de estetica*/
   
   .mainEstetica {
-    display: grid;
-    grid-template-areas: "mainP"
-                         "fisicaImagen1"
-                         "fisicaImagen2"
-                         "fisicaImagen3";
-    justify-items: center;
+    @include mainEstetica;
   }
   
- 
-  
-  
-  
-  /*Nosotros*/
-  
-  /*grid de nosotros*/
+   /*Nosotros*/
+    /*grid de nosotros*/
   
   .mainNosotros{
-    display: grid;
-    grid-template-areas: "mainP"
-                         "fisicaImagen1"
-                         "fisicaImagen2"
-                         "fisicaImagen3";
-    justify-items: center;
+    @include mainNosotros;
   }
   
-
   
   .imagenContacto{
-    padding: 2rem;
-    justify-items: center;
-    grid-area: imagenContacto;
-    display: none;
+    @include imagenContacto;
   }
   
   
   /*Contacto*/
-  
-  /*grid de contacto*/
+    /*grid de contacto*/
    
   .mainContacto{
-    margin: 2rem;
-    height: 70vh;
-    display: grid;
-     
+    @include mainContacto;
   }
   
-
-  
+  /*extend*/ 
+  footer{
+    @extend %footer;
+  }
