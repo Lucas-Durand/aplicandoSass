@@ -1,0 +1,198 @@
+/*mq home*/
+@media screen and (min-width: 600px) {
+  .mainP {
+    font-size: 0.9rem; }
+  .corriendo {
+    display: none; }
+  .carousel {
+    display: none; }
+  .estetica {
+    display: block; }
+  .mainMain {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "mainP"
+ "estetica"; } }
+
+@media screen and (min-width: 1024px) {
+  .carousel {
+    display: block;
+    grid-area: carousel; }
+  .corriendo {
+    grid-area: corriendo;
+    display: block; }
+  .estetica {
+    display: block;
+    grid-area: estetica; }
+  .mainMain {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "mainP carousel"
+ "corriendo estetica"; } }
+
+/*mq Centro*/
+@media screen and (min-width: 600px) {
+  .mainP {
+    font-size: 0.9rem;
+    padding: 1rem; }
+  .mainCentro {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "mainP mainP mainP"
+ "fisicaImagen1 fisicaImagen2 fisicaImagen3";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem; } }
+
+/*mq Estetica*/
+@media screen and (min-width: 600px) {
+  .mainP {
+    font-size: 0.9rem;
+    padding: 1rem; }
+  .mainEstetica {
+    display: grid;
+    grid-template-areas: "mainP mainP mainP"
+ "fisicaImagen1 fisicaImagen2 fisicaImagen3";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem; } }
+
+/*mq Nosotros*/
+@media screen and (min-width: 600px) {
+  .mainP {
+    font-size: 1.2rem;
+    padding: 1rem; }
+  .mainNosotros {
+    display: grid;
+    grid-template-areas: "mainP mainP mainP"
+ "fisicaImagen1 fisicaImagen2 fisicaImagen3";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem; } }
+
+/*mq Contacto*/
+@media screen and (min-width: 600px) {
+  .imagenContacto {
+    display: block; }
+  .mainContacto {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "imagenContacto";
+    justify-content: center;
+    padding: 1.5rem;
+    column-gap: 2rem; } 
+}
+
+/*extend*/
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #EB5353; }
+
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 18px;
+  height: 100vh; }
+
+body {
+  background-color: #F9D923;
+  height: 100vh; }
+
+header {
+  margin-bottom: 1rem;
+  background-color: #EB5353; }
+  header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ecce1f;
+    padding: 1rem; }
+  header nav ul {
+    display: flex;
+    list-style-type: none; }
+  header nav li {
+    background-color: rgba(238, 235, 53, 0.507);
+    margin: 0.2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 1rem;
+    font-weight: bold; }
+
+.mainMain {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "mainP"
+ "carousel";
+  padding: 1rem;
+  justify-items: center; }
+  .mainMain .mainP {
+    grid-area: mainP;
+    text-align: center;
+    font-size: 0.7rem; }
+  .mainMain .carousel {
+    grid-area: carousel; }
+  .mainMain .estetica {
+    grid-area: estetica;
+    display: none; }
+  .mainMain .corriendo {
+    grid-area: corriendo;
+    display: none; }
+
+.fisicaImagen1 {
+  grid-area: fisicaImagen1; }
+
+.fisicaImagen2 {
+  grid-area: fisicaImagen2; }
+
+.fisicaImagen3 {
+  grid-area: fisicaImagen3; }
+
+/*Centro*/
+/*grid*/
+
+.mainCentro {
+  display: grid;
+  grid-template-areas: "mainP"
+ "fisicaImagen1"
+ "fisicaImagen2"
+ "fisicaImagen3";
+  justify-items: center; }
+
+/*Estetica*/
+/*grid*/
+.mainEstetica {
+  display: grid;
+  grid-template-areas: "mainP"
+ "fisicaImagen1"
+ "fisicaImagen2"
+ "fisicaImagen3";
+  justify-items: center; }
+
+/*Nosotros*/
+/*grid*/
+.mainNosotros {
+  display: grid;
+  grid-template-areas: "mainP"
+ "fisicaImagen1"
+ "fisicaImagen2"
+ "fisicaImagen3";
+  justify-items: center; }
+
+.imagenContacto {
+  padding: 2rem;
+  justify-items: center;
+  grid-area: imagenContacto;
+  display: none; }
+
+/*Contacto*/
+/*grid*/
+.mainContacto {
+  margin: 2rem;
+  height: 70vh;
+  display: grid; }
+
+

@@ -1,0 +1,106 @@
+//imports
+@import "utilities/variables";
+@import "utilities/medias";
+@import "utilities/mixins";
+@import "utilities/extend";
+
+
+//nesting
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html {
+        font-size: 18px;
+        height: 100vh;
+        }
+        
+
+        body {
+            background-color: $color-principal;
+            height: 100vh;
+            }
+            
+
+            header {
+                @include header;
+            }
+            
+        
+            .mainMain {
+                @include mainMain;
+
+                
+                .mainP {
+                    grid-area: mainP;
+                    text-align: center;
+                    font-size: 0.7rem; }
+                .carousel {
+                    grid-area: carousel; }
+                .estetica {
+                    grid-area: estetica;
+                    display: none; }
+                .corriendo {
+                    grid-area: corriendo;
+                    display: none; }
+            }
+
+            
+            footer {
+                    grid-area: footer;
+                    text-align: center;
+                    background-color: #EB5353;
+            }
+                     
+           
+  .fisicaImagen1 {
+    grid-area: fisicaImagen1;
+  }
+  
+  .fisicaImagen2 {
+    grid-area: fisicaImagen2;
+  }
+  
+  .fisicaImagen3 {
+    grid-area: fisicaImagen3;
+  }
+  
+  .mainCentro {
+    @include mainCentro;
+  }
+    
+  /*Estetica*/
+    /*grid de estetica*/
+  
+  .mainEstetica {
+    @include mainEstetica;
+  }
+  
+   /*Nosotros*/
+    /*grid de nosotros*/
+  
+  .mainNosotros{
+    @include mainNosotros;
+  }
+  
+  
+  .imagenContacto{
+    @include imagenContacto;
+  }
+  
+  
+  /*Contacto*/
+    /*grid de contacto*/
+   
+  .mainContacto{
+    @include mainContacto;
+  }
+  
+  /*extend*/ 
+  footer{
+    @extend %footer;
+  }
